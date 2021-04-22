@@ -35,22 +35,33 @@ public class Main
        
        System.out.println("");
        double kurang1 = calculator1.kurang();
-       double kurang2 = calculator1.kurang(6, 2);
+       double kurang2 = calculator1.kurang(5, 4);
        System.out.println("Hasil pengurangan method kurang tanpa parameter:  " + kurang1);
        System.out.println("Hasil pengurangan  method kurang dengan parameter:  "+ kurang2);
        
        System.out.println("");
        double perkalian1 = calculator1.perkalian();
-       double perkalian2 = calculator1.perkalian(6, 2);
+       double perkalian2 = calculator1.perkalian(5, 4);
        System.out.println("Hasil perkalian method kali tanpa parameter:  " + perkalian1);
        System.out.println("Hasil perkalian  method kali dengan parameter:  "+ perkalian2);
        
        System.out.println("");
        double pembagian1 = calculator1.pembagian();
-       double pembagian2 = calculator1.pembagian(6, 2);
+       double pembagian2 = calculator1.pembagian(5, 4);
        System.out.println("Hasil pembagian method bagi tanpa parameter:  " + pembagian1);
        System.out.println("Hasil pembagian  method bagi dengan parameter:  "+ pembagian2);
        
-    }
     
+       CalculatorProgremmer clp = new CalculatorProgremmer();
+       System.out.println(" \n CalculatorProgrammer");
+       System.out.println("Bentuk Biner dari Desimal " + " :"+ Integer.toBinaryString(5));
+       System.out.println("Bentuk Hex dari Desimal " + " :"+ Integer.toHexString(5));
+
+    
+      CalculatorScientific cs = new CalculatorScientific();
+      System.out.println(" \n CalculatorScientific");
+      System.out.println("Faktorial dari 5! adalah :" + cs. menghitungFaktorial(5));
+      System.out.println("luas lingkarannya adalah :" + cs.luas());
+      System.out.println("luas Bujur sangkar adalah :" + cs.bujurSangkar(10));
 }
+}     
