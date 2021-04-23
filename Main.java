@@ -63,5 +63,14 @@ public class Main
       System.out.println("Faktorial dari 5! adalah :" + cs. menghitungFaktorial(5));
       System.out.println("luas lingkarannya adalah :" + cs.luas());
       System.out.println("luas Bujur sangkar adalah :" + cs.bujurSangkar(10));
+      
+      CalculatorTrigonometri  clr = new CalculatorTriRadian();
+      CalculatorTrigonometri  cld = new CalculatorTriDegree();
+      System.out.println(" \n CalculatorTrigonometri ");
+      System.out.println("Nilai dari sin 30 adalah"+ Math.sin(30));
+      System.out.println("Nilai dari Cos 90 adalah"+ Math.cos(90));
+      System.out.println("Nilai dari tan 60 adalah"+ Math.tan(60));
+      System.out.println("Nilai dari derajat sudut untuk PI/6 adalah " + Math.toDegrees(Math.PI/6) + " derajat");  
+      System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(30));  
 }
-}     
+}
