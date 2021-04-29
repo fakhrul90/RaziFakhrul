@@ -8,7 +8,7 @@ public class Main
 {
     public static void main(String args[])
     {
-       System.out.println(Calculator.info);
+       /*System.out.println(Calculator.info);
        
     Calculator calculator1 = new Calculator();
     Calculator calculator4 = new Calculator();
@@ -64,13 +64,51 @@ public class Main
       System.out.println("luas lingkarannya adalah :" + cs.luas());
       System.out.println("luas Bujur sangkar adalah :" + cs.bujurSangkar(10));
       
-      CalculatorTrigonometri  clr = new CalculatorTriRadian();
-      CalculatorTrigonometri  cld = new CalculatorTriDegree();
-      System.out.println(" \n CalculatorTrigonometri ");
-      System.out.println("Nilai dari sin 30 adalah"+ Math.sin(30));
-      System.out.println("Nilai dari Cos 90 adalah"+ Math.cos(90));
-      System.out.println("Nilai dari tan 60 adalah"+ Math.tan(60));
-      System.out.println("Nilai dari derajat sudut untuk PI/6 adalah " + Math.toDegrees(Math.PI/6) + " derajat");  
-      System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(30));  
-}
-}
+      CalculatorTrigonometri clr = new CalculatorTriRadian();
+      CalculatorTrigonometri cld = new CalculatorTriDegree();
+      
+      System.out.println(" \n CalculatorTrigonometri");
+      System.out.println("Nilai dari sin adalah :" + Math.sin(120));
+      System.out.println("Nilai dari cos adalah :" + Math.cos(180));
+      System.out.println("Nilai dari tan adalah :" + Math.tan(30));
+      System.out.println("Nilai dari sudut derajat sudut untuk PI/3 adalah" + Math.toDegrees(Math.PI/3) + " derajat");
+      System.out.println("Nilai dari sudut radian untuk sudut 120 derajat adalah " + Math.toRadians(120));
+      */
+            
+      Calculator cl = new Calculator();
+      SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryReverse();
+      
+      
+      cl.setSimpanOperasi(spr);
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println(cl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(cl.bacaOperasi());
+      
+      SimpanOperasiCalculator spf = new SimpanOperasikeMemoryForward();
+      cl.setSimpanOperasi(spf);
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println(cl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(cl.bacaOperasi());
+      
+    }
+}  
